@@ -1,0 +1,104 @@
+.hour {
+  height: 143px;
+  margin: 130px auto 40px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 14px 0 rgba(0, 0, 0, .08);
+  width: 1140px;
+  padding: 20px 30px 27px;
+  overflow: hidden;
+
+  &-title {
+    font-size: 18px;
+    color: #344665;
+    height: 21px;
+    line-height: 21px;
+    margin-bottom: 22px;
+    float: left;
+    margin-right: 10px;
+    font-weight: 400;
+
+    &::before {
+      content: '';
+      float: left;
+      height: 7px;
+      width: 7px;
+      overflow: hidden;
+      margin-right: 10px;
+      background: #344665;
+      border-radius: 50%;
+      margin-top: 8px;
+    }
+  }
+
+  &-source {
+    float: left;
+    font-size: 12px;
+    color: #8a9baf;
+    height: 21px;
+    line-height: 21px;
+  }
+
+  &-page-ctrl {
+    float: right;
+
+    .btn {
+      float: left;
+      z-index: 2;
+      width: 22px;
+      height: 22px;
+    }
+
+    .button-prev {
+      margin-right: 8px;
+      background-image: url(../../assets/images/prev.png);
+    }
+
+    .button-next {
+      background-image: url(../../assets/images/next.png);
+    }
+  }
+
+  &-weather {
+    clear: both;
+    width: 4800px;
+    transition: margin 1s ease-in-out;
+
+    &-table {
+
+      .item {
+        float: left;
+        width: 40px;
+        margin-right: 60px;
+        text-align: center;
+        background-repeat: no-repeat;
+        background-position: right;
+        position: relative;
+
+        &-time {
+          font-size: 14px;
+          color: #8a9baf;
+          line-height: 14px;
+          height: 14px;
+          margin-bottom: 24px;
+        }
+
+        &-icon {
+          display: block;
+          height: 30px;
+          width: 30px;
+          margin: 0 auto;
+          margin-bottom: 18px;
+        }
+
+        &-degree {
+          font-size: 18px;
+          color: #384c78;
+          line-height: 14px;
+        }
+      }
+    }
+  }
+
+
+}

@@ -1,0 +1,32 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  background: #f6f9fe url(./assets/images/background.jpg) no-repeat center top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 400;
+}
+
+body, button, dd, div, dl, dt, form, h1, h2, h3, h4, h5, h6, input, li, ol, p, td, textarea, th, ul {
+  padding: 0;
+  margin: 0;
+}
+
+.day-live {
+  width: 1200px;
+  height: 520px;
+  margin: 0 auto;
+  margin-bottom: 35px;
+}

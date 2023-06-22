@@ -1,0 +1,240 @@
+.header {
+  height: 64px;
+  width: 100%;
+  border-bottom: 1px solid rgba(255, 255, 255, .24);
+  margin-bottom: 42px;
+  position: relative;
+  z-index: 2;
+
+  &-content {
+    height: 100%;
+    width: 1200px;
+    margin: 0 auto;
+  }
+
+  &-logo {
+    float: left;
+    height: 37px;
+    margin-top: 13px;
+  }
+
+  &-location {
+    text-align: right;
+    padding-top: 15px;
+    height: 32px;
+    vertical-align: middle;
+    position: relative;
+
+    .city {
+      display: inline-block;
+      vertical-align: middle;
+      margin-right: 12px;
+      padding: 10px 0;
+      position: relative;
+
+      &-now {
+        color: #fff;
+        cursor: pointer;
+
+        &::before {
+          content: '';
+          float: left;
+          height: 16px;
+          width: 16px;
+          background-image: url(../../assets/images/location.png);
+          margin-right: 7px;
+          margin-top: 1px;
+        }
+      }
+
+      &-attention {
+        position: absolute;
+        display: none;
+        width: 418px;
+        min-height: 86px;
+        background: #fff;
+        left: 8px;
+        top: 38px;
+        box-shadow: 0 0 4px 0 rgba(0, 0, 0, .1);
+        border-radius: 5px;
+        padding: 17px 0;
+
+        &-title {
+          text-align: left;
+          font-size: 12px;
+          color: #9f9f9f;
+          height: 17px;
+          line-height: 17px;
+          margin-left: 20px;
+          font-weight: 400;
+        }
+
+        &-table {
+          text-align: left;
+          margin-top: 15px;
+        }
+
+        &-item {
+          height: 32px;
+          line-height: 32px;
+          padding-left: 20px;
+          font-size: 14px;
+          color: #555;
+          letter-spacing: 0;
+
+          &-city {
+            float: left;
+            width: 146px;
+            cursor: pointer;
+          }
+
+          &-wea {
+            display: inline-block;
+            width: 106px;
+          }
+
+          &-temp {
+            display: inline-block;
+            width: 66px;
+            text-align: right;
+          }
+
+          .button-delete {
+            display: inline-block;
+            height: 15px;
+            width: 15px;
+            margin-top: -3px;
+            margin-left: 12px;
+            background-image: url(../../assets/images/city_delete.png);
+          }
+        }
+
+        &-tips {
+          font-size: 14px;
+          color: #9f9f9f;
+          text-align: center;
+          line-height: 20px;
+        }
+      }
+    }
+
+    .button-attention {
+      font-size: 14px;
+      color: #fff;
+      opacity: 0.7;
+      margin-right: 20px;
+      vertical-align: middle;
+
+      &:hover {
+        opacity: 1;
+      }
+    }
+
+    .max-attention {
+      // display: none;
+      position: absolute;
+      right: 229px;
+      top: 51px;
+      font-size: 12px;
+      color: #9f9f9f;
+      height: 27px;
+      line-height: 27px;
+      width: 138px;
+      text-align: center;
+      background: #fff;
+      box-shadow: 0 0 4px 0 rgba(0, 0, 0, .1);
+      border-radius: 5px;
+    }
+
+    .city-search {
+      display: inline-block;
+      vertical-align: middle;
+      position: relative;
+      text-align: left;
+      height: 30px;
+      width: 277px;
+      font-size: 14px;
+      color: #555;
+
+      &-box {
+        font-family: "Microsoft Yahei";
+        border: none;
+        background: rgba(255, 255, 255, .2);
+        border-radius: 49px;
+        padding: 5px 13px;
+        width: 251px;
+        height: 20px;
+        color: rgba(255, 255, 255, .7);
+        line-height: 20px;
+        font-size: 14px;
+        outline: none;
+
+        &::placeholder {
+          color: rgba(255, 255, 255, .7);
+        }
+      }
+
+      .city-hot {
+        height: 280px;
+        background: #fff;
+        box-shadow: 0 0 4px 0 rgba(0, 0, 0, .15);
+        border-radius: 5px;
+        margin-top: 4px;
+        padding: 20px 0 10px;
+
+        &-nowCity-title {
+          font-size: 12px;
+          color: #9f9f9f;
+          height: 12px;
+          line-height: 12px;
+          margin-bottom: 8px;
+          margin-top: 2px;
+          clear: both;
+          padding: 0 20px;
+        }
+
+        &-nowCity-city {
+          height: 14px;
+          line-height: 14px;
+          cursor: pointer;
+          margin-bottom: 24px;
+          float: left;
+          margin-left: 20px;
+        }
+
+        &-hotCity-title {
+          font-size: 12px;
+          color: #9f9f9f;
+          height: 12px;
+          line-height: 12px;
+          margin-bottom: 8px;
+          margin-top: 2px;
+          clear: both;
+          padding: 0 20px;
+        }
+
+        &-hotCity-cityTable {
+          clear: both;
+          margin: 0 2px 0 16px;
+        }
+
+        &-hotCity-city {
+          float: left;
+          width: 25%;
+          height: 28px;
+          cursor: pointer;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+
+          span {
+            display: inline-block;
+            height: 22px;
+            line-height: 22px;
+            padding: 0 4px;
+          }
+        }
+      }
+    }
+  }
+}

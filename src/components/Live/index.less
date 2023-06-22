@@ -1,0 +1,181 @@
+.live {
+  float: right;
+  width: 430px;
+  position: relative;
+
+  &-page-ctrl {
+    float: right;
+    margin-top: 7px;
+
+    .btn {
+      float: left;
+      z-index: 2;
+      width: 22px;
+      height: 22px;
+    }
+
+    .button-prev {
+      margin-right: 8px;
+      background-image: url(../../assets/images/prev.png);
+    }
+
+    .button-next {
+      background-image: url(../../assets/images/next.png);
+    }
+  }
+
+  &-title {
+    float: left;
+    font-size: 18px;
+    color: #344665;
+    height: 21px;
+    line-height: 21px;
+    margin-bottom: 6px;
+    margin-top: 6px;
+    font-weight: 400;
+
+    &::before {
+      content: '';
+      float: left;
+      height: 7px;
+      width: 7px;
+      overflow: hidden;
+      margin-right: 10px;
+      background: #344665;
+      border-radius: 50%;
+      margin-top: 8px;
+    }
+  }
+
+  &-pages {
+    clear: both;
+    overflow: hidden;
+    position: relative;
+    width: 440px;
+    height: 470px;
+    margin-left: -5px;
+    padding-top: 18px;
+
+    &-content {
+      width: 890px;
+      transition: margin 1s ease-in-out;
+
+      .page {
+        float: left;
+        width: 440px;
+
+        .item {
+          height: 140px;
+          width: 200px;
+          background: #fff;
+          box-shadow: 0 0 14px 0 rgba(0, 0, 0, .08);
+          border-radius: 10px;
+          float: left;
+          text-align: center;
+          overflow: hidden;
+          margin-bottom: 20px;
+          margin-left: 10px;
+
+          &:hover .item-sub{
+            margin-top: -140px;
+          }
+
+          &-sub {
+            height: 102px;
+            width: 100%;
+            padding-top: 38px;
+            transition: margin .5s ease-in-out;
+
+            &-text {
+              font-size: 16px;
+              color: #384c78;
+              line-height: 22px;
+            }
+          }
+
+          &-detail {
+            height: 100%;
+            width: 160px;
+            padding: 0 20px;
+            display: table;
+            overflow: hidden;
+
+            .detail {
+              vertical-align: middle;
+              text-align: left;
+              text-align: justify;
+              text-justify: inter-ideograph;
+              display: table-cell;
+              font-size: 13px;
+              color: #384c78;
+              line-height: 1.5;
+              overflow: hidden;
+              text-overflow: ellipsis;
+              -webkit-line-clamp: 5;
+              -webkit-box-orient: vertical;
+            }
+          }
+        }
+
+        .icon {
+          height: 34px;
+          width: 34px;
+          display: block;
+          margin: 0 auto 12px;
+
+          &-clothes {
+            background-image: url(../../assets/images/clothes.png);
+          }
+
+          &-umbrella {
+            background-image: url(../../assets/images/umbrella.png);
+          }
+
+          &-medicine {
+            background-image: url(../../assets/images/medicine.png);
+          }
+
+          &-car {
+            background-image: url(../../assets/images/car.png);
+          }
+
+          &-sports {
+            background-image: url(../../assets/images/sports.png);
+          }
+
+          &-sunscreen {
+            background-image: url(../../assets/images/sunscreen.png);
+          }
+
+          &-fish {
+            background-image: url(../../assets/images/fish.png);
+          }
+
+          &-tour {
+            background-image: url(../../assets/images/tour.png);
+          }
+
+          &-traffic {
+            background-image: url(../../assets/images/traffic.png);
+          }
+
+          &-air {
+            background-image: url(../../assets/images/air.png);
+          }
+
+          &-comfort {
+            background-image: url(../../assets/images/comfort.png);
+          }
+
+          &-field {
+            background-image: url(../../assets/images/field.png);
+          }
+        }
+      }
+
+      .odd {
+        margin-right: 14px;
+      }
+    }
+  }
+}

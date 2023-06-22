@@ -1,0 +1,106 @@
+.weather {
+  height: 310px;
+  width: 1200px;
+  margin: 0 auto;
+  background-repeat: no-repeat;
+  background-position: right top;
+  position: relative;
+}
+.weather-time {
+  font-size: 14px;
+  color: #fff;
+  opacity: 0.6;
+  height: 19px;
+  line-height: 19px;
+  margin-bottom: 20px;
+}
+.weather-temp {
+  height: 86px;
+  margin-bottom: 28px;
+  vertical-align: bottom;
+  font-size: 0;
+}
+.weather-temp-temp1 {
+  display: inline-block;
+  font-size: 86px;
+  color: #fff;
+  height: 86px;
+  line-height: 86px;
+}
+.weather-temp-temp2 {
+  display: inline-block;
+  font-size: 28px;
+  color: #fff;
+  line-height: 45px;
+  height: 45px;
+  margin-right: 24px;
+}
+.weather-other {
+  vertical-align: middle;
+  font-size: 0;
+  margin-bottom: 28px;
+}
+.weather-other-item {
+  display: inline-block;
+  margin-right: 42px;
+  color: #fff;
+  height: 20px;
+  line-height: 20px;
+  font-size: 0;
+}
+.weather-other-item-logo1,
+.weather-other-item-logo2,
+.weather-other-item-logo3 {
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+  background-size: 20px 20px;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+.weather-other-item-logo2 {
+  background-image: url(../../assets/images/humidity.png);
+}
+.weather-other-item-logo3 {
+  background-image: url(../../assets/images/kPa.png);
+}
+.weather-other-item-wind,
+.weather-other-item-humidity,
+.weather-other-item-kPa {
+  display: inline-block;
+  font-size: 18px;
+  vertical-align: middle;
+}
+.weather-tips {
+  letter-spacing: 0;
+}
+.weather-tips-txt {
+  vertical-align: middle;
+  font-size: 20px;
+  color: #fff;
+  line-height: 20px;
+  height: 20px;
+  display: inline-block;
+}
+.weather-tips-txt::before {
+  content: '';
+  float: left;
+  height: 11px;
+  width: 11px;
+  margin-right: 13px;
+  background: #fff;
+  border-radius: 50%;
+  margin-top: 5px;
+}
+.weather-logo {
+  position: absolute;
+  top: 78px;
+  right: 80px;
+  width: 134px;
+  height: 134px;
+}
+.weather-logo img {
+  width: 134px;
+  height: 134px;
+  display: block;
+}
